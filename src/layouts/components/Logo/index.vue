@@ -5,7 +5,7 @@
     :class="{ unfold: collapse, horizontal: mode === 'horizontal' }"
   >
     <svg-icon name="vue" size="35px" />
-    <span class="logo-title" :style="{ color: textColor }" v-if="!collapse"> vue3-admin </span>
+    <span class="logo-title" :style="{ color: textColor }" v-if="!collapse"> Epimetheus </span>
   </div>
 </template>
 
@@ -21,6 +21,7 @@
   import { useStore } from 'vuex';
 
   import { themeConfig } from '@/config/theme';
+
   const { themeOptions } = themeConfig;
 
   const store = useStore();
@@ -51,10 +52,12 @@
     justify-content: center;
     width: $base-logo-width;
     cursor: pointer;
+
     &.unfold {
       width: $base-unfold-width;
       padding: $base-padding-10 0;
     }
+
     &.horizontal {
       justify-content: flex-start;
     }

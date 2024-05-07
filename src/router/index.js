@@ -47,6 +47,24 @@ export const asyncRoutes = [
     ],
   },
   {
+    path: '/rule',
+    component: Layout,
+    name: 'Rule',
+    children: [
+      {
+        path: '/create',
+        name: 'CreateRule',
+        component: () => import('../views/rule/index.vue'),
+        meta: {
+          title: global.t('route.monitors'),
+          icon: 'icon-edit',
+          affix: true,
+          noKeepAlive: true,
+        },
+      },
+    ],
+  },
+  {
     path: '/comp',
     component: Layout,
     name: 'Comp',

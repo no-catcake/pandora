@@ -15,6 +15,7 @@ export default {
     errorPages: 'Error Pages',
     page401: '401',
     page404: '404',
+    monitors: 'Monitors',
   },
   navbar: {
     logOut: 'Log Out',
