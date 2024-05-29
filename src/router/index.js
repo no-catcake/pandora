@@ -62,6 +62,17 @@ export const asyncRoutes = [
           noKeepAlive: true,
         },
       },
+      {
+        path: '/query',
+        name: 'Query',
+        component: () => import('../views/query/index.vue'),
+        meta: {
+          title: 'Global Query',
+          icon: 'icon-edit',
+          affix: true,
+          noKeepAlive: true,
+        },
+      },
     ],
   },
   {
